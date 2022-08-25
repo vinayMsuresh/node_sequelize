@@ -1,9 +1,9 @@
 const Sequelize = require('sequelize');
-const myFn = require('./myFun');
-const practice = require('./practice');
-const association1 = require('./association1');
-const association2 = require('./association2');
-const association3 = require('./association3');
+const myFn = require('./sequelize/myFun');
+const practice = require('./sequelize/practice');
+const association1 = require('./sequelize/association1');
+const association2 = require('./sequelize/association2');
+const association3 = require('./sequelize/association3');
 const sequelize = new Sequelize('sequelize1', 'root', '1234', {
     host: 'localhost',
     dialect: 'mysql'
