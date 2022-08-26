@@ -4,7 +4,11 @@ const practice = require('./sequelize/practice');
 const association1 = require('./sequelize/association1');
 const association2 = require('./sequelize/association2');
 const association3 = require('./sequelize/association3');
-const sequelize = new Sequelize('sequelize1', 'root', '1234', {
+const association4 = require('./sequelize/association4');
+const associationMN = require('./sequelize/associationMN');
+const eager = require('./sequelize/eagerLoading');
+const eager2 = require('./sequelize/eagerLoading2');
+const sequelize = new Sequelize('node_mysql', 'root', '1234', {
     host: 'localhost',
     dialect: 'mysql'
 })
@@ -13,4 +17,8 @@ const sequelize = new Sequelize('sequelize1', 'root', '1234', {
 // practice(sequelize);
 // association1(sequelize);
 // association2(sequelize);
-association3(sequelize);
+// association3(sequelize);
+// eager(sequelize);
+// eager2(sequelize);
+// association4(sequelize);
+associationMN(sequelize);
