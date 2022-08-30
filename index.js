@@ -10,6 +10,7 @@ const scope_association = require('./sequelize/scope_association');
 const eager = require('./sequelize/eagerLoading');
 const eager2 = require('./sequelize/eagerLoading2');
 const polymorphic = require('./sequelize/polymorphic');
+const hooks = require('./sequelize/hooks');
 const sequelize = new Sequelize('node_mysql', 'root', '1234', {
     host: 'localhost',
     dialect: 'mysql'
@@ -25,4 +26,5 @@ const sequelize = new Sequelize('node_mysql', 'root', '1234', {
 // association4(sequelize);
 // associationMN(sequelize);
 // scope_association(sequelize);
-polymorphic(sequelize);
+// polymorphic(sequelize);
+hooks(sequelize);
